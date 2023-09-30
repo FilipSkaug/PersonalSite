@@ -1,0 +1,166 @@
+.content {
+  position: relative;
+  left: 31vh;
+  width: calc(100vw - 32vh);
+  transition-duration: 1s;
+}
+
+.content.closed {
+  left: 3vh;
+  width: calc(100vw - 4vh);
+}
+
+.sidebarButton {
+  position: fixed;
+  display: flex;  
+  align-items: center;
+  left: 31vh;
+  top: 90vh;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 3vh;
+  border: 0.55vh solid black; 
+  background-color: white;
+  cursor: pointer;  
+  transition-duration: 0.9s;
+  z-index: 2;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 0.5vh 0.5vh 0;
+  display: inline-block;
+  padding: 1vh;
+}
+
+.sidebarButton .arrow {
+  transition-duration: 1s;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  margin-left: 1vh;
+  transition-delay: 0.5s;
+}
+
+.sidebarButton.closed .arrow {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  margin-left: 0;
+}
+
+.sidebarButton.closed {
+  left: 0.5vh;
+}
+
+.sidebarButton:hover {
+  background-color: #cdbbd1;
+}
+
+.returnToTop {
+  position: fixed;
+  display: flex;  
+  align-items: center;
+  right: 5vh;
+  top: 2vh;
+  height: 5vh;
+  border-radius: 1vh;
+  border: 0.4vh solid black;
+  cursor: pointer;  
+  transition-duration: 0.5s;
+  background-color: #CAA9D2;
+  font-family: monospace;
+  font-size: 1.7vh;
+  font-weight: bold;
+}
+
+.returnToTop.Top {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.returnToTop .arrow {
+  transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
+  margin-left: 0.4vh;
+  padding: 0.7vh;
+}
+
+.returnToTop:hover {
+  background-color: #dac9dd;
+}
+
+.textbox {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 3vh;
+  border-radius: 5vh;
+  box-shadow: 0.1vh 0.1vh 1vh -0.5vh #4E4351;
+  max-width:70vh;
+}
+
+
+.textbox h1 {
+  display: block  ;
+  font-family: 'MavenPro';
+  font-weight: Bold;
+  font-size: 3vh;
+  margin: 0;
+  color: #4E4351;
+}
+
+.textbox p {
+  display: block  ;
+  font-family: 'MavenPro';
+  font-weight: normal;
+  font-size: 2vh;
+  margin: 0;
+  padding-top: 1vh;
+  color: #4E4351;
+}
+
+.imageBox {
+  display: block;
+  border-radius: 5vh;
+  box-shadow: 0.1vh 0.1vh 1vh -0.5vh #4E4351;
+  width: 25vh;
+}
+
+
+@media screen and (orientation: portrait) {
+  .content {
+    left: 3vh;
+    width: calc(100vw - 4vh);
+  }
+
+
+  .textbox {
+    padding: 2vw;
+    border-radius: 5vw;
+    box-shadow: 0.1vw 0.1vw 1vw -0.5vw #4E4351;
+  }
+  
+  
+  .textbox h1 {
+    font-size: 4vw;
+  }
+  
+  .textbox p {
+    font-size: 3vw;
+    padding-top: 1vw;
+    max-width:70vw;
+  }
+  
+  .imageBox {
+    border-radius: 5vw;
+    box-shadow: 0.1vw 0.1vw 1vw -0.5vw #4E4351;
+    width: 30vw;
+  }
+  
+  .returnToTop {
+    font-size: 4vw;
+  }
+
+
+}
+
+

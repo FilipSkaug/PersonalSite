@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'SpaceMono';
+  src: url(../assets/fonts/Space_Mono/SpaceMono-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'SpaceMono';
+  src: url(../assets/fonts/Space_Mono/SpaceMono-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'MavenPro';
+  src: url(../assets/fonts/Maven_Pro/static/MavenPro-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'MavenPro';
+  src: url(../assets/fonts/Maven_Pro/static/MavenPro-SemiBold.ttf);
+  font-weight: bold;
+}
+
+body {
+  margin: 0;
+  background-color: rgba(202,190,210,0.1);
+}

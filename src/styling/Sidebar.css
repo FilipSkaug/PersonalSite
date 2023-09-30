@@ -1,0 +1,73 @@
+.sidebarWrapper h1 {
+  font-family: 'SpaceMono';
+  font-weight: bold;
+  font-size: 3vh;
+  margin: 0;;
+}
+
+.sidebarWrapper h2 {
+  font-family: 'SpaceMono';
+  font-weight: bold;
+  font-size: 2vh;
+  margin: 0;
+}
+
+.sidebarWrapper p {
+  font-family: 'SpaceMono';
+  font-weight: normal;
+  font-size: 1.7vh;
+  margin: 0;
+  margin-left: 0.4vh;
+}
+
+.sidebarWrapper a {
+  font-family: 'SpaceMono';
+  font-weight: normal;
+  font-size: 1.7vh;
+  margin: 0;
+  margin-left: 0.4vh;
+  color: black;
+}
+
+.sidebarWrapper {
+  position: fixed;
+  background-color: #CAA9D2;
+  left: 0;
+  width: 30vh;
+  height: 100vh;
+  border-right: 0.55vh solid rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5vh;
+  padding-top: 5vh;
+  transition-duration: 1s;
+  z-index: 1;
+}
+
+.closeSidebar {
+  left: -28vh;
+}
+
+
+.profilbilde {
+  display: flex;
+  height: 20vh;
+  border-radius: 20vh;
+  border: 0.55vh solid rgba(0, 0, 0, 0.8);
+}
+
+.profil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vh;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  gap: 1vh;
+}
+

@@ -1,0 +1,28 @@
+.aboutMeWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 5vh 5vh 40vh 5vh;
+  column-gap: 25vh;
+  row-gap: 8vh;
+}
+
+.aboutMeRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5vh;
+}
+
+@media screen and (orientation: portrait) {
+  .aboutMeWrapper {
+    margin: 6vh 2vw 10vh 2vw;
+    row-gap: 10vw;
+  }
+  .aboutMeRow {
+    gap: 4vw;
+  }
+}
