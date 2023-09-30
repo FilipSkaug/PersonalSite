@@ -60,7 +60,7 @@ function App() {
     <>
       <Sidebar showSidebar={showSidebar} />
       <div className={showSidebar ? "content" : "content closed"}>
-        <BrowserRouter>
+        <BrowserRouter basename="/PersonalSide">
           <Routes>
             <Route path="/" element={<Navigate />}>
               <Route index element={<AboutMe />} />
