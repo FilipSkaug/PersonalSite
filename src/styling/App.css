@@ -44,7 +44,7 @@
 .sidebarButton.closed .arrow {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
-  margin-left: 0;
+  margin-left: 0vh;
 }
 
 .sidebarButton.closed {
@@ -52,7 +52,7 @@
 }
 
 .sidebarButton:hover {
-  background-color: #cdbbd1;
+  background-color: #90A0C7;
 }
 
 .returnToTop {
@@ -65,11 +65,12 @@
   border-radius: 1vh;
   border: 0.4vh solid black;
   cursor: pointer;  
-  transition-duration: 0.5s;
-  background-color: #CAA9D2;
+  transition: 0.2s;
+  background-color: #90A0C7;
   font-family: monospace;
   font-size: 1.7vh;
   font-weight: bold;
+  color: black;
 }
 
 .returnToTop.Top {
@@ -113,6 +114,7 @@
   font-family: 'MavenPro';
   font-weight: normal;
   font-size: 2vh;
+  line-height: 2.7vh;
   margin: 0;
   padding-top: 1vh;
   color: #4E4351;
@@ -141,11 +143,12 @@
   
   
   .textbox h1 {
-    font-size: 4vw;
+    font-size: 3.5vw;
   }
   
   .textbox p {
-    font-size: 3vw;
+    font-size: 2.5vw;
+    line-height: 3vw;
     padding-top: 1vw;
     max-width:70vw;
   }
@@ -157,10 +160,23 @@
   }
   
   .returnToTop {
-    font-size: 4vw;
+    font-size: 3.5vw;
+    top: 80vh;
+    right: 3vw;
   }
 
+  .sidebarButton {
+    top: 80vh;
+    width: 5vh;
+    
+  }
+  .sidebarButton.closed {
+    left: 0;
+  }
 
+  .sidebarButton .arrow {
+    margin-left: 0;
+  }
 }
 
 

@@ -1,14 +1,16 @@
 import { useEffect, useState } from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import './styling/App.css'
 import Sidebar from './components/Sidebar.tsx'
 import Navigate from "./pages/Navigate.tsx"
 import AboutMe from "./pages/AboutMe.tsx"
 import Projects from "./pages/Projects.tsx"
 import Contact from "./pages/Contact.tsx"
+import Vektorprogrammet from "./pages/projects/Vektorprogrammet.tsx"
+import Ibdb from "./pages/projects/ibdb.tsx"
 
 function App() {
-  const [showSidebar, setShowSidebar] = useState(true);
+  const [showSidebar, setShowSidebar] = useState(false);
   const [showReturnToTop, setShowReturnToTop] = useState(false);
 
   useEffect(() => {
@@ -60,15 +62,17 @@ function App() {
     <>
       <Sidebar showSidebar={showSidebar} />
       <div className={showSidebar ? "content" : "content closed"}>
-        <BrowserRouter basename="/PersonalSide">
+        <HashRouter basename='/'>
           <Routes>
             <Route path="/" element={<Navigate />}>
               <Route index element={<AboutMe />} />
-              <Route path="projects" element={<Projects />} />
+              <Route path="projects" element={<Projects />}/>
               <Route path="contact" element={<Contact />} />
+              <Route path="projects/vektorprogrammet" element={<Vektorprogrammet />} />
+              <Route path="projects/ibdb" element={<Ibdb />} />
             </Route>
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
       </div>
       {sidebarButton() }
       {returnToTop() }

@@ -1,0 +1,26 @@
+.projectWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.projectContent {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2vw;
+}
+
+.img {
+  max-width: 50vw;
+  box-shadow: 0.1vh 0.1vh 1vh -0.5vh #4E4351;
+  border-radius: 1vh;
+}
+
+@media screen and (orientation: portrait) {
+  .img {
+    max-width: 90vw;
+  }
+}

@@ -1,0 +1,15 @@
+.projectWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5vh;
+}
+
+.project {
+  max-width: 80vw;
+  max-height: 40vh;
+  box-shadow: 0.1vh 0.1vh 1vh -0.5vh #4E4351;
+  border-radius: 1vh;
+}
