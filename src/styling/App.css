@@ -168,6 +168,7 @@
   .sidebarButton {
     top: 80vh;
     width: 5vh;
+    height: 5vh;
     
   }
   .sidebarButton.closed {
@@ -175,7 +176,9 @@
   }
 
   .sidebarButton .arrow {
-    margin-left: 0;
+    margin-left: 0.5vh;
+    padding: 0.5vh;
+    border-width: 0 0.4vh 0.4vh 0;
   }
 }
 
