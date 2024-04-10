@@ -1,13 +1,13 @@
 .content {
   position: relative;
   left: 31vh;
-  width: calc(100vw - 32vh);
+  width: calc(100vw - 33vh);
   transition-duration: 1s;
 }
 
 .content.closed {
   left: 3vh;
-  width: calc(100vw - 4vh);
+  width: calc(100vw - 5vh);
 }
 
 .sidebarButton {
