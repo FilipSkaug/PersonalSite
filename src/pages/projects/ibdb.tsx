@@ -6,7 +6,7 @@ function Ibdb () {
   return (
     <div className="projectWrapper">
       <div className="projectContent">
-        <Link to='https://ibdb-743f5.firebaseapp.com/'><img className={"img"} src={ibdb}></img></Link>
+        <Link to='https://ibdb-743f5.firebaseapp.com/'><img className="img" src={ibdb}></img></Link>
         <div className="textbox">
           <h1>IBDB</h1>
           <p>

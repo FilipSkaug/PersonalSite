@@ -17,6 +17,11 @@
   max-width: 50vw;
   box-shadow: 0.1vh 0.1vh 1vh -0.5vh #4E4351;
   border-radius: 1vh;
+  transition: all 0.5s;
+}
+
+.img:hover {
+  box-shadow: 1vh 1vh 3vh 0.2vh #8e8e8e;
 }
 
 @media screen and (orientation: portrait) {
