@@ -2,6 +2,8 @@ import '../styling/AboutMe.css';
 import profilbilde2 from '../assets/profilbilde2.jpeg';
 import teltTur from '../assets/telttur.jpg';
 import sti from '../assets/sti.jpg';
+import HoverCard from "@darenft/react-3d-hover-card";
+import "@darenft/react-3d-hover-card/dist/style.css";
 
 function AboutMe() {
   return (
@@ -15,7 +17,9 @@ function AboutMe() {
               studiet og planlegger derfor å ta Master i Informatikk og ser fram til å arbeide innenfor IT-sektoren.
             </p>
           </div>
-          <img className="imageBox" id="profilbilde2" src={profilbilde2}></img>
+          <HoverCard>
+            <img className="imageBox" id="profilbilde2" src={profilbilde2}></img>
+          </HoverCard>
         </div>
         <div className="aboutMeRow">
           <div className="textbox">
@@ -29,10 +33,14 @@ function AboutMe() {
               studier rettet mot programmering. På NTNU har jeg videreutviklet interesse innenfor webutvikling og UX-design.
             </p>
           </div>
-          <img className="imageBox" id="sti" src={sti}></img>
+          <HoverCard>
+            <img className="imageBox" id="sti" src={sti}></img>
+          </HoverCard>
         </div>
         <div className="aboutMeRow">
-          <img className="imageBox" id="teltTur" src={teltTur}></img>
+          <HoverCard>
+            <img className="imageBox" id="teltTur" src={teltTur}></img>
+          </HoverCard>
           <div className="textbox">
             <h1>Andre interesser</h1>
             <p>

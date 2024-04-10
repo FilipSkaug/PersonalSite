@@ -92,11 +92,17 @@
 .textbox {
   display: flex;
   flex-direction: column;
-  background-color: white;
   padding: 3vh;
-  border-radius: 5vh;
-  box-shadow: 0.1vh 0.1vh 1vh -0.5vh #4E4351;
+  border-radius: 3vh;
+  box-shadow: 4px 4px 8px rgb(215, 215, 215), 
+    -4px -4px 8px rgb(255, 255, 255);
   max-width:70vh;
+  transition: all 0.5s;
+}
+
+.textbox:hover {
+  box-shadow: 1px 1px 2px rgb(215, 215, 215), 
+    -1px -1px 2px rgb(255, 255, 255);
 }
 
 
@@ -122,11 +128,17 @@
 
 .imageBox {
   display: block;
-  border-radius: 5vh;
-  box-shadow: 0.1vh 0.1vh 1vh -0.5vh #4E4351;
+  border-radius: 2vh;
   width: 25vh;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3), 
+    0 0 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s;
 }
 
+.imageBox:hover{
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3), 
+    0 0 10px rgba(0, 0, 0, 0.2);
+}
 
 @media screen and (orientation: portrait) {
   .content {
