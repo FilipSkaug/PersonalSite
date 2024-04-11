@@ -17,11 +17,11 @@ function Sidebar(props: any) {
         <p>Asker</p>
         <p>Norge</p>
         <p>93642443</p>
-        <a href="mailto:filipskaug443@gmail.com">Filipskaug443@gmail.com</a>  
       </div>
       <div className="info">
         <h2>Link</h2>
         <a href="https://www.linkedin.com/in/filip-skaug/">Linkedin</a>
+        <a href="mailto:filipskaug443@gmail.com">Filipskaug443@gmail.com</a>  
       </div>
 
     </div>
