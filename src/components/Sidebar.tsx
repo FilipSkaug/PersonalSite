@@ -1,30 +1,45 @@
 import '../styling/Sidebar.css'
 import profilbilde from '../assets/profilbilde.jpeg';
+import { HiAcademicCap } from "react-icons/hi";
+import { HiFolder } from "react-icons/hi";
+import { HiUserCircle } from "react-icons/hi";
+import { HiMail } from "react-icons/hi";
+import { HiHome } from "react-icons/hi";
 
-function Sidebar(props: any) {
-  const { showSidebar } = props;
-
+function Sidebar() {
   return (
-    <div className={showSidebar ? "sidebarWrapper" : "sidebarWrapper closeSidebar"}>
-      <div className="profil">
-        <img className="profilbilde" src={profilbilde}></img>
-        <h1>Filip_Skaug</h1>
-        <p>Student</p>
-      </div>
-      <div className="info">
-        <h2>Detaljer</h2>
-        <p>Informatikk (3-år)</p>
-        <p>Asker</p>
-        <p>Norge</p>
-        <p>93642443</p>
-      </div>
-      <div className="info">
-        <h2>Link</h2>
-        <a href="https://www.linkedin.com/in/filip-skaug/">Linkedin</a>
-        <a href="mailto:filipskaug443@gmail.com">Filipskaug443@gmail.com</a>  
-      </div>
-
+  <div className="sidebarWrapper">
+    <div className="buttonWrapper">
+      <button className="navButton" style={{backgroundColor: "#BBE9FF"}}>
+        <HiHome />
+      </button>
+      <p>Start</p>
     </div>
+    <div className="buttonWrapper">
+      <button className="navButton" style={{backgroundColor: "#c2efaa"}}>
+        <HiFolder />
+      </button>
+      <p>Prosjekter</p>
+    </div>
+    <div className="buttonWrapper">
+      <button className="navButton" style={{backgroundColor: "#FDFD96"}}>
+        <HiUserCircle />
+      </button>
+      <p>Om Meg</p>
+    </div>
+    <div className="buttonWrapper">
+      <button className="navButton" style={{backgroundColor: "#e0d6ff"}}>
+        <HiAcademicCap />
+      </button>
+      <p>Erfaring</p>
+    </div>
+    <div className="buttonWrapper">
+      <button className="navButton" style={{backgroundColor: "#FF8787"}}>
+        <HiMail />
+      </button>
+      <p>Kontakt</p>
+    </div>
+  </div>
   )
 }
 

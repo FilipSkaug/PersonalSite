@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { HashRouter, Routes, Route } from 'react-router-dom'
 import './styling/App.css'
+import {RemoveScroll} from 'react-remove-scroll';
 import Sidebar from './components/Sidebar.tsx'
 import Navigate from "./pages/Navigate.tsx"
 import AboutMe from "./pages/AboutMe.tsx"
@@ -59,25 +60,22 @@ function App() {
   }
 
   return (
-    <>
-      <Sidebar showSidebar={showSidebar} />
-      <div className={showSidebar ? "content" : "content closed"}>
+    <div className="mainWrapper">
+      <Sidebar/>
+      <RemoveScroll className="main">
         <HashRouter basename='/'>
-          <Routes>
-            <Route path="/" element={<Navigate />}>
-              <Route index element={<AboutMe />} />
-              <Route path="projects" element={<Projects />}/>
-              <Route path="contact" element={<Contact />} />
-              <Route path="projects/vektorprogrammet" element={<Vektorprogrammet />} />
-              <Route path="projects/ibdb" element={<Ibdb />} />
-            </Route>
-          </Routes>
-        </HashRouter>
-      </div>
-      {sidebarButton() }
-      {returnToTop() }
-
-    </>
+            <Routes>
+              <Route path="/" element={<Navigate />}>
+                <Route index element={<AboutMe />} />
+                <Route path="projects" element={<Projects />}/>
+                <Route path="contact" element={<Contact />} />
+                <Route path="projects/vektorprogrammet" element={<Vektorprogrammet />} />
+                <Route path="projects/ibdb" element={<Ibdb />} />
+              </Route>
+            </Routes>
+          </HashRouter>
+      </RemoveScroll>
+    </div>
   )
 }
 

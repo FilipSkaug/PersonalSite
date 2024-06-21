@@ -1,77 +1,71 @@
-.sidebarWrapper h1 {
-  font-family: 'SpaceMono';
-  font-weight: bold;
-  font-size: 3vh;
-  margin: 0;;
-}
-
-.sidebarWrapper h2 {
-  font-family: 'SpaceMono';
-  font-weight: bold;
-  font-size: 2vh;
-  margin: 0;
-}
-
-.sidebarWrapper p {
-  font-family: 'SpaceMono';
-  font-weight: normal;
-  font-size: 1.7vh;
-  margin: 0;
-  margin-left: 0.4vh;
-}
-
-.sidebarWrapper a {
-  font-family: 'SpaceMono';
-  font-weight: normal;
-  font-size: 1.7vh;
-  margin: 0;
-  margin-left: 0.4vh;
-  color: black;
-}
-
 .sidebarWrapper {
-  position: fixed;
-  background-color: #90A0C7;
-  left: 0;
-  width: 30vh;
-  top: 1vh;
-  height: 92vh;
-  border-top: 0.55vh solid rgba(0, 0, 0, 0.8);
-  border-right: 0.55vh solid rgba(0, 0, 0, 0.8);
-  border-bottom: 0.55vh solid rgba(0, 0, 0, 0.8);
-  border-radius: 0 2vh 2vh 0;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  background-color: rgba(0, 0, 0, 0.25);
+  min-width: 4rem;
+  max-width: 4rem;
+  margin: 0.5rem;
+  align-self: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  height: 21rem;
+}
+
+.buttonWrapper p {
+  text-align: center;
+  margin: 0;
+  margin-top: 0rem;
+  font-size: 0rem;
+  opacity: 0;
+}
+
+.navButton {
+  margin-left: 0.5rem;
+  display: flex;
+  width: 3rem;
+  height: 3rem; 
   align-items: center;
-  gap: 5vh;
-  padding-top: 5vh;
-  transition-duration: 1s;
-  z-index: 1;
+  justify-content: center;
+  border: none;
+  padding: 0;
+  border-radius: 30%;
+  box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.25);
+  transition: all 0.8s;
+  overflow: hidden;
+  box-shadow: 
+    inset 3px 0px 7px -1px rgba(0,0,0,0.15),
+    inset -3px 0px 7px -1px rgba(0,0,0,0.15),
+    inset 0px -2px 7px -1px rgba(0,0,0,0.2),
+    inset 0px 2px 7px -1px rgba(255,255,255,0.5),
+    0px 4px 4px 0px rgba(0,0,0,0.25);
 }
 
-.closeSidebar {
-  left: -28vh;
+.navButton:hover {
+  width: 3.5rem;
+  height: 3.5rem;
+  box-shadow: 
+    inset 3px 0px 7px -1px rgba(0,0,0,0.15),
+    inset -3px 0px 7px -1px rgba(0,0,0,0.15),
+    inset 0px -2px 7px -1px rgba(0,0,0,0.2),
+    inset 0px 2px 7px -1px rgba(255,255,255,0.5),
+    0px 5px 5px 0px rgba(0,0,0,0.5);
+  transition-duration: 0.2s;
 }
 
+.profil:hover {
+  width: 4rem;
+  height: 4rem;
+}
+
+.navButton * {
+  width: 75%;
+  height: 75%;
+  color: rgba(0, 0, 0, 0.8);
+}
 
 .profilbilde {
-  display: flex;
-  height: 20vh;
-  border-radius: 20vh;
-  border: 0.55vh solid rgba(0, 0, 0, 0.8);
+  width: 130%;
+  height: 130%;
 }
-
-.profil {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1vh;
-}
-
-.info {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  gap: 1vh;
-}
-
