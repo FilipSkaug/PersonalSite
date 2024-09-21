@@ -11,7 +11,6 @@ function Navigate() {
         <Link to="projects" className={location.pathname === '/projects' ? 'Link' : 'Link grey-text'}>Prosjekter</Link>
         <Link to="contact" className={location.pathname === '/contact' ? 'Link' : 'Link grey-text'}>Kontakt meg</Link>
       </nav>
-
       <Outlet />
     </>
   )

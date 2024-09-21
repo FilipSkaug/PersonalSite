@@ -1,22 +1,93 @@
+#projects {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+
 .projectWrapper {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 5vh;
+  gap: 5%;
+}
+
+.left {
+  flex-direction: row-reverse;
+}
+
+.right {
+  flex-direction: row;
 }
 
 .project {
-  max-width: 80vw;
-  max-height: 40vh;
-  box-shadow: 0.1vh 0.1vh 1vh -0.5vh #4E4351;
-  border-radius: 1vh;
-  transition: all 0.5s;
+  position: relative;
+  max-height: 35rem;
+  border: 0.2rem dashed rgba(0, 0, 0, 0.2);
+  border-radius: 0.8rem;
+  transition: all 0.5s ease-out;
+  max-width: 40%;
 }
 
-.project:hover {
-  max-width: 81vw;
-  max-height: 41vh;
-  box-shadow: 1vh 1vh 3vh vh #8e8e8e;
+.img {
+  position: absolute;
+  top: 5%;
+  left: -20rem;
+  width: 90%;
+  height: 90%;
+  rotate: 1deg;
+  transition: all 0.5s;
+  overflow: hidden;
+  opacity: 0;
+  border-radius: 0.2rem;
+}
+
+.left .img {
+  rotate: -1deg;
+  left: 20rem;
+}
+
+.img:hover {
+  top: -1%;
+  left: -1% !important;
+  width: 102%;
+  height: 102%;
+  rotate: 0deg;
+}
+
+.pButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: transparent;
+  padding: 0.5rem;
+  margin: 0;
+  width: 5rem;
+  height: 2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  border: solid 0.1rem rgba(0, 0, 0, 1);
+  transition: all 1s;
+  overflow: hidden;
+}
+
+.pButton p {
+  padding: 0;
+  color: black;
+  min-width: 20rem;
+}
+
+.textbox {
+  display: flex;
+  flex-direction: column;
+  padding: 3vh;
+  border-radius: 3vh;
+  transition: all 0.5s;
+  max-width: 40%;
+  gap: 2rem;
+}
+
+.textbox p {
+  padding-top: 0.5rem;
 }

@@ -1,6 +1,5 @@
 import { Link  } from 'react-router-dom'
 import ibdb from '../../assets/Projects/ibdb.png'
-import '../../styling/Project.css'
 
 function Ibdb () {
   return (

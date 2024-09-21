@@ -1,6 +1,6 @@
 import { Link  } from 'react-router-dom'
 import vektorprogrammet from '../../assets/Projects/Vektorprogrammet.png'
-import '../../styling/Project.css'
+
 
 function Vektorprogrammet () {
   return (

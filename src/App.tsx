@@ -3,16 +3,13 @@ import { HashRouter, Routes, Route } from 'react-router-dom'
 import './styling/App.css'
 import {RemoveScroll} from 'react-remove-scroll';
 import Sidebar from './components/Sidebar.tsx'
-import Navigate from "./pages/Navigate.tsx"
-import AboutMe from "./pages/AboutMe.tsx"
-import Projects from "./pages/Projects.tsx"
-import Contact from "./pages/Contact.tsx"
+import MainPage from "./pages/MainPage.tsx"
 import Vektorprogrammet from "./pages/projects/Vektorprogrammet.tsx"
 import Ibdb from "./pages/projects/ibdb.tsx"
 
 function App() {
-  const [showSidebar, setShowSidebar] = useState(false);
   const [showReturnToTop, setShowReturnToTop] = useState(false);
+  const [active, setActive] = useState<string>("home");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,24 +29,7 @@ function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  function showSiderbarHadler() {
-    setShowSidebar(!showSidebar);
-  }
-
-  
-  
-  function sidebarButton() {
-    return (
-      <> 
-        <button className={showSidebar ? "sidebarButton" : "sidebarButton closed"} onClick={showSiderbarHadler}>
-          <i className="arrow"></i>
-        </button>
-      </>
-    )
-  }
-
   function returnToTop() {
-
     return (
       <>
         <button className={showReturnToTop ? "returnToTop" : "returnToTop Top"} onClick={scrollToTop}>
@@ -61,17 +41,13 @@ function App() {
 
   return (
     <div className="mainWrapper">
-      <Sidebar/>
+      <Sidebar active={active}/>
       <RemoveScroll className="main">
         <HashRouter basename='/'>
             <Routes>
-              <Route path="/" element={<Navigate />}>
-                <Route index element={<AboutMe />} />
-                <Route path="projects" element={<Projects />}/>
-                <Route path="contact" element={<Contact />} />
-                <Route path="projects/vektorprogrammet" element={<Vektorprogrammet />} />
-                <Route path="projects/ibdb" element={<Ibdb />} />
-              </Route>
+              <Route index element={<MainPage active={active} setActive={setActive}/>} />
+              <Route path="projects/vektorprogrammet" element={<Vektorprogrammet />} />
+              <Route path="projects/ibdb" element={<Ibdb />} />
             </Routes>
           </HashRouter>
       </RemoveScroll>

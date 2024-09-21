@@ -1,7 +1,8 @@
-import '../styling/Contact.css';
-import linkedIn from '../assets/icons/linkedin.svg';
-import gmail from '../assets/icons/gmail.svg';
-import message from '../assets/icons/message.svg';
+import linkedIn from '../../assets/icons/linkedin.svg';
+import gmail from '../../assets/icons/gmail.svg';
+import message from '../../assets/icons/message.svg';
+import '../../styling/Contact.css';
+
 
 function Contact() {
   function copyToClipboard() {
@@ -9,20 +10,17 @@ function Contact() {
   }
 
   return (
-    <>
-      <div className="contactWrapper">
+    <div className="section" id="contact">
         <a href="https://www.linkedin.com/in/filip-skaug/">
           <img src={linkedIn} alt="LinkedIn" className="icons"/>
         </a> 
-        <a href="mailto:filipskaug443@gmail.com">
-          <img src={gmail} alt="Gmail" className="icons"/>
+        <a href="mailto:filipskaug443@gmail.com" className="icons">
+          <img src={gmail} alt="Gmail" style={{padding: '1.8vh'}}/>
         </a>
         <a onClick={copyToClipboard}>
           <img src={message} alt="message" className="icons"/>
         </a>
-      </div>
-    </>
-  )
-}
+    </div>
+)}
 
 export default Contact;

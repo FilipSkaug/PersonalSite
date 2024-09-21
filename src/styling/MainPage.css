@@ -1,0 +1,60 @@
+.MainPageWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.containment {
+  position: fixed;
+  width: 100%;
+  height: 1px;
+  top: 50%;
+}
+
+.section {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  padding: 0;
+}
+
+#education {
+  padding: 25rem 0 25rem 0;
+  max-width: 70rem;
+}
+
+.home {
+  padding-top: 18rem;
+  flex-direction: column;
+}
+
+.home * {
+  margin: 0;
+  opacity: 0.9;
+  padding: 0.5rem;
+}
+
+.vertical-timeline-element-date {
+  font-family: 'SourceSans3';
+}
+
+.timeline {
+  font-family: 'SF';
+  margin: 0;
+  opacity: 0.8;
+}
+
+.timeline.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.timeline.location {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.timeline.description {
+  font-size: 1rem;
+  opacity: 0.6;
+}
