@@ -1,5 +1,4 @@
 import '../styling/Sidebar.css'
-import profilbilde from '../assets/profilbilde.jpeg';
 import { HiAcademicCap } from "react-icons/hi";
 import { HiFolder } from "react-icons/hi";
 import { HiUserCircle } from "react-icons/hi";

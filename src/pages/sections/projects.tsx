@@ -1,12 +1,10 @@
-
-import { useEffect, useState } from 'react'
 import { Link  } from 'react-router-dom'
 import { data } from '../../data/project';
 import '../../styling/Projects.css'
 
 import VisibilitySensor from 'react-visibility-sensor';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 const handleVisibilityChange = (isVisible: boolean, index: number) => {
   const element = document.getElementById(index.toString());
@@ -17,7 +15,7 @@ const handleVisibilityChange = (isVisible: boolean, index: number) => {
 };
 
 function Projects() {
-  const [showContent, setShowContent] = useState(false);
+  // const [showContent, setShowContent] = useState(false);
   return (
     <div className="section" id="projects">
       {data.project.map((item, index) => (

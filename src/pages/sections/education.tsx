@@ -6,7 +6,7 @@ function Education () {
   return (
     <div className="section" id="education">
     <VerticalTimeline lineColor="rgba(0,0,0,0.8)">
-      {data.experience.map((item, index) => (
+      {data.experience.map((item) => (
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{backgroundColor: "transparent", color: '#000', boxShadow: 'none'}}

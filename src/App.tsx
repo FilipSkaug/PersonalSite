@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { HashRouter, Routes, Route } from 'react-router-dom'
 import './styling/App.css'
 import {RemoveScroll} from 'react-remove-scroll';
@@ -8,36 +8,36 @@ import Vektorprogrammet from "./pages/projects/Vektorprogrammet.tsx"
 import Ibdb from "./pages/projects/ibdb.tsx"
 
 function App() {
-  const [showReturnToTop, setShowReturnToTop] = useState(false);
+  // const [showReturnToTop, setShowReturnToTop] = useState(false);
   const [active, setActive] = useState<string>("home");
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY === 0) {
-        setShowReturnToTop(false);
-      } else {
-        setShowReturnToTop(true);
-      }
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (window.scrollY === 0) {
+  //       setShowReturnToTop(false);
+  //     } else {
+  //       setShowReturnToTop(true);
+  //     }
+  //   };
+  //   window.addEventListener('scroll', handleScroll);
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, []);
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+  // const scrollToTop = () => {
+  //   window.scrollTo({ top: 0, behavior: 'smooth' });
+  // };
 
-  function returnToTop() {
-    return (
-      <>
-        <button className={showReturnToTop ? "returnToTop" : "returnToTop Top"} onClick={scrollToTop}>
-          <p>Til toppen</p>
-        </button>
-      </>
-    )
-  }
+  // function returnToTop() {
+  //   return (
+  //     <>
+  //       <button className={showReturnToTop ? "returnToTop" : "returnToTop Top"} onClick={scrollToTop}>
+  //         <p>Til toppen</p>
+  //       </button>
+  //     </>
+  //   )
+  // }
 
   return (
     <div className="mainWrapper">

@@ -1,4 +1,3 @@
-import React, { useRef } from 'react'
 import VisibilitySensor from 'react-visibility-sensor';
 import '../styling/MainPage.css';
 import Home from './sections/home';
