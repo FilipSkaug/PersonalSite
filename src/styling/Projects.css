@@ -91,3 +91,13 @@
 .textbox p {
   padding-top: 0.5rem;
 }
+
+@media screen and (orientation: portrait) {
+  .project {
+    max-width: 100%;
+  }
+
+  .textbox {
+    max-width: 100%;
+  }
+}

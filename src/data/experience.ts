@@ -10,7 +10,7 @@ export const data = {
     title: "Bachelor i Informatikk",
     location: "Trondheim, Norge",
     date: "2021 - 2024",
-    description: "Jeg har en bachelorgrad i informatikk fra NTNU i Trondheim, der jeg har fått muligheten til å fordype meg i blant annet programvareutvikling, algoritmer, datastrukturer, databaser og kunstig intelligens. Noe som jeg syntes har vært utrolig spennende og jeg ser fram til å jobbe videre med dette!",
+    description: "Jeg har en bachelorgrad i Informatikk fra NTNU i Trondheim, der jeg har fått muligheten til å fordype meg i blant annet programvareutvikling, algoritmer, datastrukturer, databaser og kunstig intelligens. Dette er noe jeg syntes har vært utrolig spennende og jeg ser fram til å jobbe videre med dette!",
     icon: React.createElement("img", { src: ntnu, style: { width: "80%", height: "80%" }}),
     link: "https://www.ntnu.no/studier/bit"
   },
@@ -34,7 +34,7 @@ export const data = {
     title: "Bacheloroppgave hos Nordic Semiconductor",
     location: "Trondheim, Norge",
     date: "2024",
-    description: "Jeg skrev bacheloroppgaven min hos Nordic Semiconductor, hvor jeg var en del av firmware-teamet. Sammen med to andre utviklet jeg firmware for en Thingy:91-enhet. Vi benyttet oss av samples og SDK-er, som Nordic nRF Connect SDK, som var levert av kunden vår Nordic Semiconductor. Som er basert på programmeringsspråket C og Zephyr OS. Gjennom dette prosjektet fikk jeg verdifull erfaring med å jobbe tett med en ekte kunde, samt praktisk innsikt i firmware-utvikling.",
+    description: "Jeg skrev bacheloroppgaven min hos Nordic Semiconductor, hvor jeg var en del av firmware-teamet. Sammen med to andre utviklet jeg firmware for en Thingy:91-enhet. Vi benyttet oss av samples og SDK-er, som Nordic nRF Connect SDK, som var levert av kunden vår Nordic Semiconductor. Som er basert på programmeringsspråket C og Zephyr OS. Gjennom dette prosjektet fikk jeg verdifull erfaring med å jobbe tett med en reell kunde, samt praktisk innsikt i firmware-utvikling.",
     icon: React.createElement("img", { src: NordicLogo, style: { width: "80%", height: "80%" }}),
     link: "https://www.nordicsemi.com/About-us"
   },
@@ -50,7 +50,7 @@ export const data = {
     title: "Master i Ingeniørvitenskap og IKT",
     location: "Trondheim, Norge",
     date: "2024 - Dags dato",
-    description: "Etter å ha fullført bachelorgraden min i informatikk, begynte jeg på 3. klasse av sivilingeniørgraden i Ingeniørvitenskap og IKT ved NTNU. Jeg valgte denne retningen for å få en bredere forståelse innen ingeniørfag, samtidig som jeg ønsket å holde fokus på IT. Jeg planlegger å bli ferdig i 2027.",
+    description: "Etter å ha fullført Bachelorgraden min i Informatikk, begynte jeg i 3. klasse av sivilingeniørgraden i Ingeniørvitenskap og IKT ved NTNU. Jeg valgte denne retningen for å få en bredere forståelse innen ingeniørfag, samtidig som jeg ønsket å holde fokus på IT. Jeg planlegger å bli ferdig i 2027.",
     icon: React.createElement("img", { src: ntnu, style: { width: "80%", height: "80%" }}),
     link: "https://www.ntnu.no/studier/mting"
   },

@@ -76,58 +76,14 @@ p {
 
 
 
-/* @media screen and (orientation: portrait) {
-  .content {
-    left: 3vh;
-    width: calc(100vw - 4vh);
-  }
-
-
-  .textbox {
-    padding: 2vw;
-    border-radius: 5vw;
-    box-shadow: 0.1vw 0.1vw 1vw -0.5vw #4E4351;
+@media screen and (orientation: portrait) {
+  h1 {
+    font-size: 1rem;
   }
   
-  
-  .textbox h1 {
-    font-size: 3.5vw;
+  p {
+    font-size: 0.75rem;
   }
-  
-  .textbox p {
-    font-size: 2.5vw;
-    line-height: 3vw;
-    padding-top: 1vw;
-    max-width:70vw;
-  }
-  
-  .imageBox {
-    border-radius: 5vw;
-    box-shadow: 0.1vw 0.1vw 1vw -0.5vw #4E4351;
-    width: 30vw;
-  }
-  
-  .returnToTop {
-    font-size: 3.5vw;
-    top: 80vh;
-    right: 3vw;
-  }
-
-  .sidebarButton {
-    top: 80vh;
-    width: 5vh;
-    height: 5vh;
-    
-  }
-  .sidebarButton.closed {
-    left: 0;
-  }
-
-  .sidebarButton .arrow {
-    margin-left: 0.5vh;
-    padding: 0.5vh;
-    border-width: 0 0.4vh 0.4vh 0;
-  }
-} */
+}
 
 

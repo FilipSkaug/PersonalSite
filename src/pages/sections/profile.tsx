@@ -13,7 +13,8 @@ function Profile () {
             Her har jeg samlet informasjon om meg selv, som utdanning og prosjekter jeg har jobbet med. Så ta en liten titt rundt og se hva jeg har å tilby!
           </p>
           <p>
-          Jeg studerer for øyeblikket 4. året ved NTNU. I fjor fullførte jeg en bachelorgrad i informatikk, og dette semesteret begynte jeg på 3. klasse av Ingeniørvitenskap og IKT.          </p>
+            Jeg studerer for øyeblikket 4. året ved NTNU. I fjor fullførte jeg en Bachelorgrad i Informatikk, og dette semesteret begynte jeg på 3. klasse av Ingeniørvitenskap og IKT.
+          </p>
         </div>
         <img src={profilbildet} alt="Bilde av meg" className="profilePicture"/>
       </div>

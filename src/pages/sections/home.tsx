@@ -3,10 +3,10 @@ import { TypeAnimation } from 'react-type-animation';
 
 function home() {
   return(
-  <div className="section home" id="home">
+  <div className="section home">
     <div>
-      <p style={{fontSize: "1.5rem", fontFamily: 'AbrilFatface'}}>Hei,</p>
-      <p style={{fontSize: "4rem", fontFamily: 'lebora'}}>Jeg heter Filip Skaug</p>
+      <p className="intro1">Hei,</p>
+      <p className="intro2">Jeg heter Filip Skaug</p>
       <TypeAnimation
         sequence={[
           "og er it student.",
@@ -18,9 +18,9 @@ function home() {
           "og er kollega ?",
           1500
         ]}
+        className="intro3"
         speed={30}
         deletionSpeed={20}
-        style={{ fontSize: '2rem', fontFamily: 'AbrilFatface'}}
         repeat={Infinity}
       />
     </div>

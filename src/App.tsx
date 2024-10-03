@@ -4,8 +4,6 @@ import './styling/App.css'
 import {RemoveScroll} from 'react-remove-scroll';
 import Sidebar from './components/Sidebar.tsx'
 import MainPage from "./pages/MainPage.tsx"
-import Vektorprogrammet from "./pages/projects/Vektorprogrammet.tsx"
-import Ibdb from "./pages/projects/ibdb.tsx"
 
 function App() {
   // const [showReturnToTop, setShowReturnToTop] = useState(false);
@@ -46,8 +44,6 @@ function App() {
         <HashRouter basename='/'>
             <Routes>
               <Route index element={<MainPage active={active} setActive={setActive}/>} />
-              <Route path="projects/vektorprogrammet" element={<Vektorprogrammet />} />
-              <Route path="projects/ibdb" element={<Ibdb />} />
             </Routes>
           </HashRouter>
       </RemoveScroll>

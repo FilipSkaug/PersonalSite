@@ -31,14 +31,14 @@ export const data = {
       title: "HorseRace",
       description: "HorseRace er en nettside jeg har utviklet i forbindelse med Vektor IT. Sammen med en medstudent laget jeg en nettside som simulerer et hesteløp. Vi brukte React og TypeScript for å utvikle nettsiden.",
       info: "I dette prosjektet brukte jeg React og TypeScript på en ukonvensjonell måte, og måtte bruke useState og useEffect på en måte jeg ikke hadde gjort før.",
-      link: "https://filipskaug.github.io/HorseRace/",
+      link: "https://github.com/FilipSkaug/horse-race",
       img: HorseRace
     },
     {
       title: "Old Portfolio",
       description: "Dette er min gamle personlige nettside.",
       info: "Her var målet å bruke det jeg har lært om webdesign til å lage en nettside om meg selv.",
-      link: "https://filipskaug.github.io/FilipSkaug/",
+      link: "https://github.com/FilipSkaug/PersonalSite",
       img: OldPortfolio
     }
   ]

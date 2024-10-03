@@ -1,3 +1,9 @@
+#contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .icons {
   cursor: pointer;
   min-width: 15vh;
@@ -9,10 +15,7 @@
 }
 
 @media screen and (orientation: portrait) {
-  .contactWrapper {
-    gap: 0;
-  }
-  .icons {
-    width: 20vw;
+  #contact {
+    flex-direction: column;
   }
 }
