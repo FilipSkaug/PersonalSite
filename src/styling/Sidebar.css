@@ -1,3 +1,9 @@
+.sidebarContent {
+  position: relative;
+  display: flex;
+  height: 100vh;
+}
+
 .sidebarWrapper {
   border: 0.1rem solid rgba(0, 0, 0, 0.1);
   border-radius: 1rem;
@@ -79,7 +85,14 @@
   color: rgba(0, 0, 0, 0.8);
 }
 
-.profilbilde {
-  width: 130%;
-  height: 130%;
+@media screen and (orientation: portrait) {
+  .sidebarContent {
+    max-width: 3.2rem;
+    left: -1rem;
+  }
+
+  .sidebarWrapper {
+    transform: scale(0.5);
+  }
+
 }
