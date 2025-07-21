@@ -7,13 +7,10 @@ function Profile () {
       <div className="aboutMeRow">
         <div className="profileIntro">
           <h1>
-            Hei og velkommen til min nettside!
+            Velkommen til min nettside!
           </h1>
           <p>
-            Her har jeg samlet informasjon om meg selv, som utdanning og prosjekter jeg har jobbet med. Så ta en liten titt rundt og se hva jeg har å tilby!
-          </p>
-          <p>
-            Jeg studerer for øyeblikket 4. året ved NTNU. I fjor fullførte jeg en Bachelorgrad i Informatikk, og dette semesteret begynte jeg på 3. klasse av Ingeniørvitenskap og IKT.
+            <span className="mute">Her har jeg samlet litt</span> informasjon om meg selv. <span className="mute">Så ta en liten titt rundt og se hva jeg har å tilby</span>
           </p>
         </div>
         <img src={profilbildet} alt="Bilde av meg" className="profilePicture"/>

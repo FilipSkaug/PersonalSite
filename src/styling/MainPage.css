@@ -1,7 +1,8 @@
 .MainPageWrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
+  margin-left: 3rem;
 }
 
 .containment {
@@ -14,33 +15,41 @@
 .section {
   display: flex;
   min-height: 100vh;
-  align-items: center;
   padding: 0;
 }
 
 .intro1 {
-  font-size: 1.5rem;
-  font-family: AbrilFatface;
+  font-size: 3rem;
+  font-family: 'SF';
+  font-weight: bold;
+  color: white;
 }
 
 .intro2 {
-  font-size: 4rem;
-  font-family: lebora;
+  font-size: 6rem;
+  font-family: 'SF';
+  font-weight: bold;
+  color: white;
 }
 
 .intro3 {
-  font-size: 2rem;
-  font-family: AbrilFatface;
+  font-size: 3rem;
+  font-family: 'SF';
+  font-weight: bold;
+  padding-left: 0 !important;
+  color: white;
 }
 
 #education {
   margin: 25rem 0 25rem 0;
-  max-width: 70rem;
+  align-self: center;
+  width: 100%;
 }
 
 .home {
-  padding-top: 18rem;
+  padding-top: 15rem;
   flex-direction: column;
+  width: 100%;
 }
 
 .home * {
@@ -50,28 +59,25 @@
 }
 
 .vertical-timeline-element-date {
-  font-family: 'SourceSans3';
+  font-family: 'SF';
+  font-weight: bold !important;
+  font-size: 1.2rem;
 }
 
 .timeline {
   font-family: 'SF';
   margin: 0;
-  opacity: 0.8;
 }
 
 .timeline.title {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-.timeline.location {
-  font-size: 0.8rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 
 .timeline.description {
-  font-size: 1rem;
-  opacity: 0.6;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-bottom: 10rem;
 }
 
 @media screen and (orientation: portrait) {

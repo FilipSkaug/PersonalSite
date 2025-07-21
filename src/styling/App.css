@@ -57,7 +57,10 @@ p {
   font-weight: normal;
   font-size: 1rem;
   margin: 0;
-  opacity: 0.6;
+}
+
+.mute {
+  opacity: 0.5;
 }
 
 .imageBox {

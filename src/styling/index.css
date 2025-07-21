@@ -50,6 +50,12 @@
 
 @font-face {
   font-family: 'SF';
+  src: url(../assets/fonts/sf-pro-display/SFPRODISPLAYMEDIUM.OTF);
+  font-weight: medium;
+}
+
+@font-face {
+  font-family: 'SF';
   src: url(../assets/fonts/sf-pro-display/SFPRODISPLAYBOLD.OTF);
   font-weight: bold;
 }

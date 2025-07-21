@@ -23,8 +23,6 @@
 .project {
   position: relative;
   max-height: 35rem;
-  border: 0.2rem dashed rgba(0, 0, 0, 0.2);
-  border-radius: 0.8rem;
   transition: all 0.5s ease-out;
   max-width: 40%;
 }
@@ -35,24 +33,14 @@
   left: -20rem;
   width: 90%;
   height: 90%;
-  rotate: 1deg;
   transition: all 0.5s;
   overflow: hidden;
   opacity: 0;
-  border-radius: 0.2rem;
+  border-radius: 1rem;
 }
 
 .left .img {
-  rotate: -1deg;
   left: 20rem;
-}
-
-.img:hover {
-  top: -1%;
-  left: -1% !important;
-  width: 102%;
-  height: 102%;
-  rotate: 0deg;
 }
 
 .pButton {
@@ -88,8 +76,12 @@
   gap: 2rem;
 }
 
+.textbox h1 {
+  font-size: 2rem;
+}
 .textbox p {
   padding-top: 0.5rem;
+  font-size: 1.4rem;
 }
 
 @media screen and (orientation: portrait) {

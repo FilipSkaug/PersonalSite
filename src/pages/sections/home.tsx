@@ -4,26 +4,25 @@ import { TypeAnimation } from 'react-type-animation';
 function home() {
   return(
   <div className="section home" id="home">
-    <div>
-      <p className="intro1">Hei,</p>
-      <p className="intro2">Jeg heter Filip Skaug</p>
+    <p className="intro1">Hei,</p>
+    <p className="intro2">Jeg heter Filip Skaug</p>
+    <p className="intro3">
       <TypeAnimation
         sequence={[
-          "og er it student.",
+          "og er student.",
           1500,
           "og er utvikler.",
           1500,
           "og er designer.",
           1500,
-          "og er kollega ?",
+          "og er kollega?",
           1500
         ]}
-        className="intro3"
         speed={30}
         deletionSpeed={20}
         repeat={Infinity}
       />
-    </div>
+    </p>
   </div>
 )}
 

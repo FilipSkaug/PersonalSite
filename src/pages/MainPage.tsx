@@ -23,19 +23,19 @@ const MainPage: React.FC<Props> = ({ setActive }) => {
     <>
       <div className="containment" id="containment"></div>
       <div className="MainPageWrapper">
-        <VisibilitySensor onChange={(isVisible: boolean) => handleVisibilityChange(isVisible, setActive, "home", "#BBE9FF")} partialVisibility containment={document.getElementById("containment")}>
+        <VisibilitySensor onChange={(isVisible: boolean) => handleVisibilityChange(isVisible, setActive, "home", "#000000")} partialVisibility containment={document.getElementById("containment")}>
           <Home />
         </VisibilitySensor>
-        <VisibilitySensor onChange={(isVisible: boolean) => handleVisibilityChange(isVisible, setActive, "profile", "#FDFD96")} partialVisibility containment={document.getElementById("containment")}>
+        <VisibilitySensor onChange={(isVisible: boolean) => handleVisibilityChange(isVisible, setActive, "profile", "#BBE9FF")} partialVisibility containment={document.getElementById("containment")}>
           <Profile />
         </VisibilitySensor>
-        <VisibilitySensor onChange={(isVisible: boolean) => handleVisibilityChange(isVisible, setActive, "education", "#e0d6ff")} partialVisibility containment={document.getElementById("containment")}>
+        <VisibilitySensor onChange={(isVisible: boolean) => handleVisibilityChange(isVisible, setActive, "education", "#D9CFEF")} partialVisibility containment={document.getElementById("containment")}>
           <Education />
         </VisibilitySensor>
-        <VisibilitySensor onChange={(isVisible: boolean) => handleVisibilityChange(isVisible, setActive, "projects", "#c2efaa")} partialVisibility containment={document.getElementById("containment")}>
+        <VisibilitySensor onChange={(isVisible: boolean) => handleVisibilityChange(isVisible, setActive, "projects", "#F4A6A6")} partialVisibility containment={document.getElementById("containment")}>
           <Projects />
         </VisibilitySensor>
-        <VisibilitySensor onChange={(isVisible: boolean) => handleVisibilityChange(isVisible, setActive, "contact", "#FF8787")} partialVisibility containment={document.getElementById("containment")}>
+        <VisibilitySensor onChange={(isVisible: boolean) => handleVisibilityChange(isVisible, setActive, "contact", "#D8CDEA")} partialVisibility containment={document.getElementById("containment")}>
           <Contact />
         </VisibilitySensor>
       </div>

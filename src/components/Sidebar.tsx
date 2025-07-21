@@ -19,31 +19,31 @@ const Sidebar: React.FC<Props> = ({ active }) => {
   <div className="sidebarContent">
     <div className="sidebarWrapper">
       <div className="buttonWrapper">
-        <button className={`navButton ${active == "home" ? "active" : ""}`} style={{backgroundColor: "#BBE9FF"}} onClick={() => scrollTo("home")}>
+        <button className={`navButton ${active == "home" ? "active" : ""}`} style={{backgroundColor: "#EDE6DA"}} onClick={() => scrollTo("home")}>
           <HiHome />
         </button>
         <p>Start</p>
       </div>
       <div className="buttonWrapper">
-        <button className={`navButton ${active == "profile" ? "active" : ""}`} style={{backgroundColor: "#FDFD96"}} onClick={() => scrollTo("profile")}>
+        <button className={`navButton ${active == "profile" ? "active" : ""}`} style={{backgroundColor: "#BBE9FF"}} onClick={() => scrollTo("profile")}>
           <HiUserCircle />
         </button>
         <p>Om Meg</p>
       </div>
       <div className="buttonWrapper">
-        <button className={`navButton ${active == "education" ? "active" : ""}`} style={{backgroundColor: "#e0d6ff"}} onClick={() => scrollTo("education")}>
+        <button className={`navButton ${active == "education" ? "active" : ""}`} style={{backgroundColor: "#A8D8B9"}} onClick={() => scrollTo("education")}>
           <HiAcademicCap />
         </button>
         <p>Erfaring</p>
       </div>
       <div className="buttonWrapper">
-        <button className={`navButton ${active == "projects" ? "active" : ""}`} style={{backgroundColor: "#c2efaa"}} onClick={() => scrollTo("projects")}>
+        <button className={`navButton ${active == "projects" ? "active" : ""}`} style={{backgroundColor: "#F4A6A6"}} onClick={() => scrollTo("projects")}>
           <HiFolder />
         </button>
         <p>Prosjekter</p>
       </div>
       <div className="buttonWrapper">
-        <button className={`navButton ${active == "contact" ? "active" : ""}`} style={{backgroundColor: "#FF8787"}} onClick={() => scrollTo("contact")}>
+        <button className={`navButton ${active == "contact" ? "active" : ""}`} style={{backgroundColor: "#D8CDEA"}} onClick={() => scrollTo("contact")}>
           <HiMail />
         </button>
         <p>Kontakt</p>
