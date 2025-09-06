@@ -15,7 +15,7 @@ function Contact() {
           <img src={linkedIn} alt="LinkedIn" className="icons"/>
         </a> 
         <a href="mailto:filipskaug443@gmail.com" className="icons">
-          <img src={gmail} alt="Gmail" style={{padding: '1.8vh'}}/>
+          <img src={gmail} alt="Gmail" />
         </a>
         <a onClick={copyToClipboard}>
           <img src={message} alt="message" className="icons"/>

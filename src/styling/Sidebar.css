@@ -87,12 +87,7 @@
 
 @media screen and (orientation: portrait) {
   .sidebarContent {
-    max-width: 3.2rem;
-    left: -1rem;
-  }
-
-  .sidebarWrapper {
-    transform: scale(0.5);
+    display: none;
   }
 
 }

@@ -1,21 +1,27 @@
 #contact {
   display: flex;
   flex-direction: row;
+  width: 100%;
   justify-content: center;
+  align-items: center;
 }
 
 .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
-  min-width: 15vh;
+  width: 15vh;
+  height: 15vh;
   transition: all 0.5s;
+}
+
+.icons img {
+  width: 70%;               
+  height: 70%;
+  object-fit: contain;
 }
 
 .icons:hover {
   transform: scale(1.1);
-}
-
-@media screen and (orientation: portrait) {
-  #contact {
-    flex-direction: column;
-  }
 }

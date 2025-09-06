@@ -1,6 +1,7 @@
 import { Link  } from 'react-router-dom'
 import { data } from '../../data/project';
 import '../../styling/Projects.css'
+import parse from 'html-react-parser';
 
 import VisibilitySensor from 'react-visibility-sensor';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -34,13 +35,13 @@ function Projects() {
             <div>
               <h1>{item.title}</h1>
               <p>
-                {item.description}
+                {parse(item.description)}
               </p>
             </div>
             <div>
               <h1>Hva jeg lærte</h1>
               <p>
-                {item.info}
+                {parse(item.info)}
               </p>
             </div>
           </div>

@@ -43,7 +43,7 @@ export const data = {
   },
   {
     title: "Ingeniørvitenskap og IKT",
-    date: "2024 - 2027",
+    date: "2024 - 2025",
     description: '<span class="mute">Etter å ha fullført Bachelorgraden begynte jeg på </span>sivilingeniørstudiet, Ingeniørvitenskap og IKT ved NTNU Trondheim. <span class="mute">Jeg valgte denne graden for å forbedre forståelsen innen generelle ingeniørfag, samtidig som jeg ønsket å beholde fokus på IT.',
     icon: React.createElement("img", { src: ntnu, style: { width: "80%", height: "80%" }}),
     link: "https://www.ntnu.no/studier/mting"
@@ -54,5 +54,12 @@ export const data = {
     description: `<span class="mute">Det var viktig for meg å integrere meg tidlig i studiemiljøet til I og IKT, derfor engasjerte jeg meg i Tur-komiteen. </span>Turringen er en av linjeforeningen Hybrida's mange komiteer, og går ut på å arrangere aktive og sosiale arrangementer for studentene.`,
     icon: React.createElement("img", { src: Hybrida, style: { width: "80%", height: "80%" }}),
     link: "https://hybrida.no/komite#innhold"
-  }
+  },
+  {
+    title: "Datateknologi",
+    date: "2025 - 2027",
+    description: '<span class="mute">Etter ett år på Ingeniørvitenskap og IKT ble jeg sikker på at jeg ønsket å jobbe innen data. Derfor bestemte jeg meg for å</span> fullføre sivilingeniørgraden i Datateknologi.',
+    icon: React.createElement("img", { src: ntnu, style: { width: "80%", height: "80%" }}),
+    link: "https://www.ntnu.no/studier/mtdt"
+  },
 ]};

@@ -58,4 +58,9 @@
   .profileIntro {
     gap: 1rem;
   }
+
+  .profilePicture {
+  max-width: 15rem;
+  max-height: 15rem;
+}
 }

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect, useRef} from 'react'
 import { HashRouter, Routes, Route } from 'react-router-dom'
 import './styling/App.css'
 import {RemoveScroll} from 'react-remove-scroll';
@@ -8,6 +8,23 @@ import MainPage from "./pages/MainPage.tsx"
 function App() {
   // const [showReturnToTop, setShowReturnToTop] = useState(false);
   const [active, setActive] = useState<string>("home");
+  const hasAlerted = useRef(false);
+
+  useEffect(() => {
+    const checkOrientation = () => {
+      if (!hasAlerted.current && window.innerHeight > window.innerWidth) {
+        alert("Obs! Denne nettsiden er designet for PC. Opplevelsen vil være dårligere.");
+        hasAlerted.current = true;
+      }
+    };
+
+    checkOrientation();
+    window.addEventListener("resize", checkOrientation);
+
+    return () => {
+      window.removeEventListener("resize", checkOrientation);
+    };
+  }, []);
 
   // useEffect(() => {
   //   const handleScroll = () => {
